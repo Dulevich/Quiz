@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <!-- title and description -->
+        <title>Quiz</title>
+        <meta name="description" content="Description content.">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- icons -->
+        <link rel="icon" href="favicon.png"> <!--32х32-->
+        <!-- open graph -->
+        <meta property="og:title" content="Open graph title" />
+        <meta property="og:type" content="article" /> <!-- if not audio and not video -->
+        <meta property="og:url" content="https://website.com/" />
+        <meta property="og:image" content="src/icons/og.png" /> <!-- OG image is 1200×630 pixels  -->
+        <meta property="og:site_name" content="website.com" /> <!-- not important -->
+        <meta property="og:description" content="Description content." /> <!-- not important -->
+        <meta property="og:locale" content="en_US" /> <!-- default: "en_US" -->
+    </head>
+    <body class="flex">
+        <button class="start">НАЧАТЬ</button>
+
+        <div id="game-container">
+            <div id="info">
+              <span class="info-span">Вопрос <span id="q-number"></span> из <span id="q-all"></span></span>
+              <span class="info-span">Осталось <span id="q-timer"></span> секунд</span>
+            </div>
+            <div class="question"></div>
+            <div class="flex">
+              <div class="ans" id="ans1">1. <span></span></div>
+              <div class="ans" id="ans2">2. <span></span></div>
+              <div class="ans" id="ans3">3. <span></span></div>
+              <div class="ans" id="ans4">4. <span></span></div>
+            </div>
+        </div>
+
+        <div id="result">
+            <div>Вы набрали <span id="score"></span></div>
+            <div>Правильных ответов: <span id="rightCount"></span></div>
+        </div>
+
+        <script defer src="script.js"></script>
+    </body>
+</html>
